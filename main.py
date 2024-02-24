@@ -1,4 +1,4 @@
-from controller import display_encrypted_hello_world
+from controller import start_cypher
 
 if __name__ == "__main__":
-    display_encrypted_hello_world()
+    start_cypher()
