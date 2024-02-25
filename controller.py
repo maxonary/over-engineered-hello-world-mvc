@@ -1,8 +1,9 @@
 import random
 from model import caesar_cipher
 from view import display_encrypted_name, get_user_name, guess_shift, display_guess_result
+from config import CypherConfig
 
-def start_cypher():
+def start_cypher(config):
     user_name = get_user_name()
     shift_amount = random.randint(1, 9)
     encrypted_name = caesar_cipher(user_name, shift_amount)
@@ -20,4 +21,3 @@ def start_cypher():
             display_guess_result(True, attempts, user_name)
         else:
             display_guess_result(False, attempts, guessed_name)
-
