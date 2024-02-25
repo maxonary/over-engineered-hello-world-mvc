@@ -18,6 +18,8 @@ def start_cypher(config):
     attempts = 0
     while not correct_guess:
         user_guess = guess_shift()
+        if user_guess == 'q':
+            break
         attempts += 1
         logger.info(f"User guess: {user_guess}")
         guessed_name = caesar_cipher(user_name, user_guess)

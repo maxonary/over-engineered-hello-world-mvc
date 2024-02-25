@@ -5,7 +5,14 @@ def display_encrypted_name(name):
     print(f"Encrypted Name: {name}")
 
 def guess_shift():
-    return int(input("Guess the shift amount (1-9): "))
+    user_input = input("Guess the shift amount (1-9) or 'q' to quit: ")
+    if user_input.lower() == 'q':
+        return 'q'
+    elif user_input.isdigit() and 1 <= int(user_input) <= 9:
+        return int(user_input)
+    else:
+        print("Invalid input. Please enter a valid number between 1 and 9 or 'q' to quit.")
+        return guess_shift()
 
 def display_guess_result(correct, attempts, name):
     if correct:
