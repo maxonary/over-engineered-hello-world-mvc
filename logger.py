@@ -7,4 +7,4 @@ def enable_logging():
     logger.setLevel(logging.INFO)
 
 def disable_logging():
-    logger.setLevel(logging.CRITICAL) # Disable all logging
+    logger.setLevel(logging.CRITICAL)
