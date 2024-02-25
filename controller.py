@@ -5,7 +5,7 @@ from config import CypherConfig
 
 def start_cypher(config):
     user_name = get_user_name()
-    shift_amount = random.randint(1, 9)
+    shift_amount = random.randint(config.min_shift, config.max_shift)
     encrypted_name = caesar_cipher(user_name, shift_amount)
     display_encrypted_name(encrypted_name)
 
