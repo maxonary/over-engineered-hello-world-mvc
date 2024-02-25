@@ -5,7 +5,7 @@ def get_user_name():
             return user_name
         else:
             print("Invalid input. Please enter a name using only Latin letters.")
-            
+
 def display_encrypted_name(name):
     print(f"Encrypted Name: {name}")
 
@@ -24,3 +24,11 @@ def display_guess_result(correct, attempts, name):
         print(f"Hello {name}! \n You've guessed the correct shift amount in {attempts} attempts!")
     else:
         print(f"Current guess: {name}, \n Try again!")
+
+def ask_logging_preference():
+    while True:
+        choice = input("Would you like to enable detailed logging? (y/n): ").lower()
+        if choice in ['y', 'n']:
+            return choice == 'y'
+        else:
+            print("Invalid input. Please enter 'y' for yes or 'n' for no.")
