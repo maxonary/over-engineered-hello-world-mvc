@@ -2,7 +2,7 @@ def caesar_cipher(text, shift):
     encrypted_text = ""
     for char in text:
         if char.isalpha():
-            shift_amount = shift % 26
+            shift_amount = shift % 26 # Numer of letters in the alphabet
             char_code = ord(char) + shift_amount
             if char.islower():
                 char_code -= 97
