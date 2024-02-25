@@ -15,7 +15,7 @@ The Model-View-Controller (MVC) is an architectural pattern that separates an ap
 - View - Representation of data -> takes data from the model and renders it
 - Controller -> User input receiver -> glues together model and view
 
-Each of these components are built to handle specific development aspects of an application. MVC is one of the most frequently used industry-standard web development framework to create scalable and extensible projects.
+Each of these components is built to handle specific development aspects of an application. MVC is one of the most frequently used industry-standard web development framework to create scalable and extensible projects.
 
 ### How to run
 1. Clone the repository
