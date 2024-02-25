@@ -1,6 +1,11 @@
 def get_user_name():
-    return input("Enter your name: ")
-
+     while True:
+        user_name = input("Enter your name: ")
+        if user_name.isalpha():
+            return user_name
+        else:
+            print("Invalid input. Please enter a name using only Latin letters.")
+            
 def display_encrypted_name(name):
     print(f"Encrypted Name: {name}")
 
